@@ -15,6 +15,11 @@ namespace RUN
         public Inventory myCharatcer;
         public Inventory storeCharater;
 
+        private void Update()
+        {
+            this.transform.Rotate(Vector3.up, 45 * Time.deltaTime, Space.Self);//物体自转代码
+        }
+
         public void AddItem()
         {
             myCharatcer.itemList.Add(item);
